@@ -1,4 +1,5 @@
 import './styles.css';
+import './dropdown.css';
 
 const DropdownMenu = (id, mode) => {
   const validModes = ['click', 'mouseover'];
