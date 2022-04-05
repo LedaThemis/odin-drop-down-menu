@@ -9,6 +9,9 @@
   --dropdown-menu-width: 10rem;
   --dropdown-menu-padding: 1rem;
 
+  --dropdown-menu-button-font-family: arial;
+  --dropdown-items-font-family: 'Times New Roman', sans-serif;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -24,6 +27,7 @@
 
   color: var(--dropdown-menu-font-color);
   font-size: var(--dropdown-menu-button-font-size);
+  font-family: var(--dropdown-menu-button-font-family);
 
   cursor: pointer;
 }
@@ -45,6 +49,7 @@
   width: 100%;
   color: var(--dropdown-menu-font-color);
   font-size: var(--dropdown-items-font-size);
+  font-family: var(--dropdown-items-font-family);
 }
 
 .dropdown-item {
