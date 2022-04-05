@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n\n//# sourceURL=webpack://odin-drop-down-menu/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\nconst DropdownMenu = () => {\n  const DOMHandlers = (() => {\n    const toggleDropdownMenu = (dropdownMenu) => {\n      if (dropdownMenu.style.display) {\n        dropdownMenu.style.display = '';\n      } else {\n        dropdownMenu.style.display = 'none';\n      }\n    };\n\n    const handleDropDownButtonClick = (e) => {\n      let dropdownMenu;\n      e.target.parentNode.childNodes.forEach((cn) => {\n        if (cn.classList && cn.classList.contains('dropdown-items')) {\n          dropdownMenu = cn;\n        }\n      });\n      toggleDropdownMenu(dropdownMenu);\n    };\n\n    return {\n      handleDropDownButtonClick,\n    };\n  })();\n\n  const DOM = (() => {\n    const dropdownButton = document.querySelector('#dropdown-button-1');\n    dropdownButton.addEventListener('click', DOMHandlers.handleDropDownButtonClick);\n  })();\n};\n\nDropdownMenu();\n\n\n//# sourceURL=webpack://odin-drop-down-menu/./src/index.js?");
 
 /***/ })
 
