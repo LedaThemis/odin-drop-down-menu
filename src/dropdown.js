@@ -3,12 +3,6 @@ import './dropdown.css';
 const DropdownMenu = (id, mode) => {
   const validModes = ['click', 'mouseover'];
 
-  function checkLoaded() {
-    return document.readyState === 'complete';
-  }
-  if (!checkLoaded()) {
-    throw `Window hasn't loaded yet`;
-  }
   if (!validModes.includes(mode)) {
     throw `Valid modes are ${validModes}`;
   }
