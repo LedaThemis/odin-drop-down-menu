@@ -1,6 +1,6 @@
 {
   "name": "leda-drop-down-menu",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Drop-down menu",
   "main": "./src/dropdown.js",
   "scripts": {
