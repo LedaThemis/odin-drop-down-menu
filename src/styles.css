@@ -1,4 +1,15 @@
+html {
+  background-color: #c69b7b;
+}
+
 body {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #3a3845;
+}
+
+#main {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
