@@ -45,8 +45,9 @@ const DropdownMenu = (id, mode) => {
       const dropdownButton = document.querySelector(`#dropdown-button-${id}`);
       dropdownButton.addEventListener('click', (e) => DOMHandlers.handleDropDownButtonClick(e, id));
     } else if (mode === 'mouseover') {
+      const dropdownButton = document.querySelector(`#dropdown-button-${id}`);
       const dropdownDiv = document.querySelector(`#dropdown-menu-${id}`);
-      dropdownDiv.addEventListener('mouseover', (e) => DOMHandlers.handleDropDownDivMouseOver(e, id));
+      dropdownButton.addEventListener('mouseover', (e) => DOMHandlers.handleDropDownDivMouseOver(e, id));
       dropdownDiv.addEventListener('mouseleave', (e) => DOMHandlers.handleDropDownDivMouseLeave(e, id));
     }
   })();
