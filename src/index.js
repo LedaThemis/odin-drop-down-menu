@@ -1,6 +1,6 @@
 import './styles.css';
 
-const DropdownMenu = () => {
+const DropdownMenu = (id) => {
   const DOMHandlers = (() => {
     const toggleDropdownMenu = (dropdownMenu) => {
       if (dropdownMenu.style.display) {
@@ -26,9 +26,9 @@ const DropdownMenu = () => {
   })();
 
   const DOM = (() => {
-    const dropdownButton = document.querySelector('#dropdown-button-1');
+    const dropdownButton = document.querySelector(`#dropdown-button-${id}`);
     dropdownButton.addEventListener('click', DOMHandlers.handleDropDownButtonClick);
   })();
 };
 
-DropdownMenu();
+DropdownMenu(1);
