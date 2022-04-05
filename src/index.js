@@ -6,6 +6,10 @@ const DropdownMenu = (id, mode) => {
     throw `Valid modes are ${validModes}`;
   }
 
+  if (!document.querySelector(`#dropdown-menu-${id}`)) {
+    throw `A dropdown menu with id ${id} doesn't exist in HTML`;
+  }
+
   const DOMHandlers = (() => {
     const toggleDropdownMenu = (dropdownMenu) => {
       if (dropdownMenu.style.display) {
@@ -49,3 +53,4 @@ const DropdownMenu = (id, mode) => {
 };
 
 DropdownMenu(1, 'click');
+DropdownMenu(2, 'mouseover');
